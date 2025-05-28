@@ -7,7 +7,7 @@ export default function Cards({title,
     technologies = []}) {
 
     return (
-        <article className="projects__cards">
+        <article className="projects__card">
             <h3>{title}</h3>
             <a href={url} target="_blank" rel="noopener noreferrer">
                 <img src={imageSrc} alt={imageAlt} />
