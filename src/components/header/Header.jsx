@@ -1,11 +1,18 @@
+import { Link } from "react-router"
 import Navigation from "../navigation/Navigation"
+import "./_Header.scss"
 
-export default function Header({header}) {
-
-    return(
+export default function Header({ img }) {
+    return (
         <>
-        <h1>{header}</h1>
-        <Navigation />
+            <header>
+                <div className="nav__logo">
+                    <Link to="/">
+                        <img src={img} className="logo" alt="E-Thon logo" />
+                    </Link>
+                </div>
+                <Navigation />
+            </header>
         </>
     )
 }

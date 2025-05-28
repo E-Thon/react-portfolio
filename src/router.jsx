@@ -1,13 +1,13 @@
 import { createBrowserRouter } from "react-router";
 import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import ListDetail from "./pages/ListDetail";
-import Lists from "./pages/Lists";
 import NotFound from "./pages/NotFound";
-import { getList, getLists } from "./utilities/typicode";
 import Loading from "./components/loading/Loading";
 import { ErrorBoundary } from "./components/error/ErrorBoundary";
 import Layout from "./Layout";
+import { handleSubmit } from "./utilities/actions";
 
 const router = createBrowserRouter([
     {
@@ -21,18 +21,17 @@ const router = createBrowserRouter([
                 element: <Home />
             },
             {
-                path: "lists",
-                element: <Lists />,
-                loader: getLists,
+                path: "about",
+                element: <About />,
             },
             {
-                path: "lists/:id",
-                element: <ListDetail />,
-                loader: getList,
+                path: "projects",
+                element: <Projects />,
             },
             {
                 path: "contact",
-                element: <Contact />
+                element: <Contact />,
+                action: handleSubmit,
             },
             {
                 path: "*",

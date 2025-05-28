@@ -1,0 +1,12 @@
+@use "../../placeholders/Base";
+
+header {
+  @extend %base;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
