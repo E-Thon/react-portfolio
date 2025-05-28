@@ -1,9 +1,9 @@
-import { Link } from "react-router"
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import "./_Footer.scss"
 
 export default function Footer({ img, adress, number, mail }) {
     return (
-        <footer>
+        <footer className="footer">
             <div className="footer__contact">
                 <figure className="footer__portrait">
                     <img src={img} className="portrait" alt="Portrait of Emilie Malene Thon" />
@@ -16,16 +16,16 @@ export default function Footer({ img, adress, number, mail }) {
             </div>
             <ul className="footer__somes">
                 <li className="footer__some">
-                    <Link href="https://www.facebook.com/emi.m.thon"><FaFacebook /></Link>
+                    <a href="https://www.facebook.com/emi.m.thon" target="_blank"><FaFacebook /></a>
                 </li>
                 <li className="footer__some">
-                    <Link href="https://www.instagram.com/emi.thon/"><FaInstagram /></Link>
+                    <a href="https://www.instagram.com/emi.thon/" target="_blank"><FaInstagram /></a>
                 </li>
                 <li className="footer__some">
-                    <Link href="https://www.linkedin.com/in/emilie-thon-257943325/"><FaLinkedin /></Link>
+                    <a href="https://www.linkedin.com/in/emilie-thon-257943325/" target="_blank"><FaLinkedin /></a>
                 </li>
                 <li className="footer__some">
-                    <Link href="https://github.com/E-Thon"><FaGithub /></Link>
+                    <a href="https://github.com/E-Thon" target="_blank"><FaGithub /></a>
                 </li>
             </ul>
         </footer>

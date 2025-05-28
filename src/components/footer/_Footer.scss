@@ -1,7 +1,7 @@
 @use "../../variables/Colors" as var;
 @use "../../placeholders/Base";
 
-footer {
+.footer {
     @extend %base;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -13,8 +13,9 @@ footer {
     padding: 0% 3%;
     border: 1px solid white;
     background-color: var.$primary-color;
-    // width: 100%;
-        &__portrait img {
+
+    &__portrait {
+        img {
             max-width: 10rem;
             min-width: 8rem;
             width: 100%;
@@ -22,35 +23,46 @@ footer {
             border: 1px solid white;
             padding: .4rem;
         }
-        &__contact {
-            display: flex;
-            align-items: center;
-            p {
-                font-style: normal;
-                padding: 0;
-                line-height: 2rem;
-                text-transform: uppercase;
+    }
+
+    &__contact {
+        display: flex;
+        align-items: center;
+
+        p {
+            font-style: normal;
+            padding: 0;
+            line-height: 2rem;
+            text-transform: uppercase;
+            font-size: .8rem;
+
+            a {
                 font-size: .8rem;
-                a {
-                    font-size: .8rem;
-                    text-transform: lowercase;
-                    text-decoration: none;
-                    color: white;
-                }
+                text-transform: lowercase;
+                text-decoration: none;
+                color: white;
             }
         }
-        &__somes {
-            display: flex;
-            gap: 2rem;
-            padding-right: 5%;
-            justify-self: center;
-        }
-        &__some  {
-            color: white;
-            list-style: none;
+    }
+
+    &__somes {
+        display: flex;
+        gap: 2rem;
+        padding-right: 5%;
+        justify-self: center;
+    }
+
+    &__some {
+        color: white;
+        list-style: none;
+
+        a {
+            text-decoration: none;
+
             svg {
                 font-size: 2rem;
                 color: var.$font-color;
             }
         }
-    } 
+    }
+}

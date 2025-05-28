@@ -1,4 +1,5 @@
 import { Form, useActionData } from "react-router"
+import "./_Contact.scss";
 
 export default function Contact() {
     const errors = useActionData();

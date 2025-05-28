@@ -1,3 +1,5 @@
+import "./_NotFound.scss";
+
 export default function NotFound() {
 
     return(

@@ -6,7 +6,7 @@ export default function Layout() {
   return (
     <>
       <Header 
-        header="My App"
+        img="/logo.png"
       />
 
       <main> 
