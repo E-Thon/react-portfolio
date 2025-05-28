@@ -1,5 +1,5 @@
-@use "../../variables/colors.scss" as var;
-@use "../../placeholders/base";
+@use "../../variables/Colors" as var;
+@use "../../placeholders/Base";
 
 footer {
     @extend %base;

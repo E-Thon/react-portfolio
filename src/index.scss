@@ -5,7 +5,16 @@
 @use "./components/loading/Loading";
 @use "./components/navigation/Navigation";
 @use "./components/cards/Cards.scss";
-@use "./variables/colors";
+@use "./variables/Colors" as var;
+@use "./placeholders/Base";
+@use "./placeholders/Img";
+@use "./style/Fonts";
+@use "./style/Splash";
+@use "./pages/About";
+@use "./pages/Contact";
+@use "./pages/Projects";
+@use "./pages/Home";
+@use "./pages/NotFound";
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

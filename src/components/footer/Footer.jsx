@@ -1,4 +1,5 @@
 import { Link } from "react-router"
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Footer({ img, adress, number, mail }) {
 
@@ -16,16 +17,16 @@ export default function Footer({ img, adress, number, mail }) {
             </div>
             <ul className="div__somes">
                 <li className="div__some">
-                    <Link href="https://www.facebook.com/emi.m.thon"><i className="fa-brands fa-facebook-f"></i>
+                    <Link href="https://www.facebook.com/emi.m.thon"><FaFacebook/>
                     </Link></li>
                 <li className="div__some">
-                    <Link href="https://www.instagram.com/emi.thon/"><i className="fa-brands fa-instagram"></i></Link>
+                    <Link href="https://www.instagram.com/emi.thon/"><FaInstagram/></Link>
                     </li>
                 <li className="div__some">
-                    <Link href="https://www.linkedin.com/in/emilie-thon-257943325/"><i className="fa-brands fa-linkedin-in"></i></Link>
+                    <Link href="https://www.linkedin.com/in/emilie-thon-257943325/"><FaLinkedin/></Link>
                     </li>
                 <li className="div__some">
-                    <Link href="https://github.com/E-Thon"><i className="fa-brands fa-github"></i></Link>
+                    <Link href="https://github.com/E-Thon"><FaGithub/></Link>
                     </li>
             </ul>
         </>
