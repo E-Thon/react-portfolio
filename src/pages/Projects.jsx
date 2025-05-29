@@ -1,14 +1,9 @@
-import { useEffect, useState } from "react";
-import Cards from "../components/cards/Cards";
 import "./_Projects.scss";
+import ProjectCards from "../components/cards/ProjectCards";
+import { useLoaderData } from "react-router";
 
 export default function Projects() {
-    const [cards, setCards] = useState([])
-    useEffect(() => {
-        fetch('/data.json')
-            .then(response => response.json())
-            .then(data => setCards(data.cards))
-    }, [])
+    const {cards} = useLoaderData();
 
     return (
         <>
@@ -17,14 +12,14 @@ export default function Projects() {
                     projects
                 </h1>
                 <div className="projects__cards">
-                    {cards.map((card, index) => (
-                        <Cards
-                            key={index}
-                            title={card.title}
+                    {cards.map((card) => (
+                        <ProjectCards
+                            key={card.id}
+                            title={card.title ? card.title : ''}
                             url={card.url}
-                            imageSrc={card.imageSrc}
-                            imageAlt={card.imageAlt}
-                            technologies={card.technologies}
+                            imageSrc={card.imageSrc && card.imageSrc.length > 0 ? card.imageSrc[0] : ''}
+                            imageAlt={card.imageAlt ? card.imageAlt : ''}
+                            technologies={card.technologies ? card.technologies : ''}
                         />
                     ))}
                 </div>

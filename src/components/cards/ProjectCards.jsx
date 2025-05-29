@@ -1,6 +1,6 @@
-import "./_Cards.scss";
+import "./_ProjectCards.scss";
 
-export default function Cards({title,
+export default function ProjectCards({title,
     url,
     imageSrc,
     imageAlt,
