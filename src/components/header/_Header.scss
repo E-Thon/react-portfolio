@@ -1,4 +1,5 @@
 @use "../../placeholders/Base";
+@use "../../placeholders/Img";
 @use "../../variables/Colors" as var;
 
 header {
@@ -9,7 +10,15 @@ header {
   left: 0;
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
+  align-items: center;
+  padding: 1.2rem;
   z-index: 2;
   background-color: var.$secundary-bg-color;
+  .nav {    
+    &__logo img {
+      @extend %img;
+      width: 2rem;
+      opacity: 0.3;
+    }
+  }
 }

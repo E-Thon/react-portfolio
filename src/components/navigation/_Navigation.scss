@@ -1,23 +1,11 @@
 @use "../../variables/Colors" as var;
 @use "../../placeholders/Base";
-@use "../../placeholders/Img";
 
 .nav {
   @extend %base;
-  @extend %img;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: fit-content;
-  height: fit-content;
-  padding: 2% 4%;
-  &__logo img {
-    width: 2rem;
-    opacity: 0.3;
-  }
   &__menu {
     cursor: pointer;
-    width: fit-content;
     position: absolute;
     height: 100vh;
     top: 0;
@@ -34,7 +22,6 @@
     width: 2rem;
     padding: 1.5rem;
     z-index: 10;
-    margin: 2% 4%;
     & span {
       background-color: var.$font-color;
       height: 10%;
