@@ -8,6 +8,7 @@ import Loading from "./components/loading/Loading";
 import { ErrorBoundary } from "./components/error/ErrorBoundary";
 import Layout from "./Layout";
 import { handleSubmit } from "./utilities/actions";
+import { getProjects } from "./utilities/typicode";
 
 const router = createBrowserRouter([
     {
@@ -18,7 +19,8 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <Home />
+                element: <Home />,
+                loader: getProjects,
             },
             {
                 path: "about",
@@ -27,6 +29,7 @@ const router = createBrowserRouter([
             {
                 path: "projects",
                 element: <Projects />,
+                loader: getProjects,
             },
             {
                 path: "contact",
