@@ -1,7 +1,7 @@
-@use "./variables/_Colors.scss" as var;
-@use "./placeholders/_Base.scss";
-@use "./placeholders/_Img.scss";
-@use "./style/_Fonts.scss";
+@use "variables/_Colors.scss" as var;
+@use "placeholders/_Base.scss";
+@use "placeholders/_Img.scss";
+@use "style/_Fonts.scss";
 
 #root {
     position: relative;
