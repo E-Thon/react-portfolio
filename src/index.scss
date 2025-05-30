@@ -1,7 +1,7 @@
-@use "./variables/Colors" as var;
-@use "./placeholders/Base";
-@use "./placeholders/Img";
-@use "./style/Fonts";
+@use "./variables/_Colors" as var;
+@use "./placeholders/_Base";
+@use "./placeholders/_Img";
+@use "./style/_Fonts";
 
 #root {
     position: relative;

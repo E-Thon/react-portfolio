@@ -1,6 +1,6 @@
-@use "../../placeholders/Base";
-@use "../../placeholders/Img";
-@use "../../variables/Colors" as var;
+@use "../../placeholders/_Base";
+@use "../../placeholders/_Img";
+@use "../../variables/_Colors" as var;
 
 header {
   @extend %base;
