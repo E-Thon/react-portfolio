@@ -3,7 +3,7 @@ import "./_Footer.scss"
 
 export default function Footer({ img, adress, number, mail }) {
     return (
-        <footer className="footer">
+        <>
             <div className="footer__contact">
                 <figure className="footer__portrait">
                     <img src={img} className="portrait" alt="Portrait of Emilie Malene Thon" />
@@ -28,6 +28,6 @@ export default function Footer({ img, adress, number, mail }) {
                     <a href="https://github.com/E-Thon" target="_blank"><FaGithub /></a>
                 </li>
             </ul>
-        </footer>
+        </>
     )
 }
