@@ -5,7 +5,6 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Loading from "./components/loading/Loading";
-import { ErrorBoundary } from "./components/error/ErrorBoundary";
 import Layout from "./Layout";
 import { handleSubmit } from "./utilities/actions";
 import { getProjects } from "./utilities/typicode";
@@ -15,7 +14,6 @@ const router = createBrowserRouter([
         path: "/",
         element: <Layout />,
         hydrateFallbackElement: <Loading />,
-        errorElement: <ErrorBoundary />,
         children: [
             {
                 index: true,
