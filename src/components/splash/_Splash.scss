@@ -1,5 +1,5 @@
 @use "../../variables/_Colors" as var;
-@use "../../placeholders/_Img";
+@use "../../placeholders/_Img" as *;
 
 //! KEYFRAMES FOR ANIMATION
 @keyframes slideInFromRight {

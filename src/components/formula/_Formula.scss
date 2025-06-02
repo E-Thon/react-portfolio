@@ -1,5 +1,5 @@
 @use "../../variables/_Colors" as var;
-@use "../../placeholders/_Buttons";
+@use "../../placeholders/_Buttons" as *;
 
 form {
     display: grid;

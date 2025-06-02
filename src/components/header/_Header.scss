@@ -1,5 +1,5 @@
-@use "../../placeholders/_Base";
-@use "../../placeholders/_Img";
+@use "../../placeholders/_Base" as *;
+@use "../../placeholders/_Img" as *;
 @use "../../variables/_Colors" as var;
 
 header {
