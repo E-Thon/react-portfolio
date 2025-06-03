@@ -1,5 +1,5 @@
 import { Link } from "react-router"
-import "./_ButtonLink";
+import "./_ButtonLink.scss";
 
 export default function ButtonLink({to, text}){
     return (
